@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>派勒地垫 - 降低清洁成本的秘密</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Microsoft YaHei', Arial, sans-serif;
+        }
+        
+        body {
+            background-color: #f7f9fc;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            text-align: center;
+            padding: 30px 0;
+            background: linear-gradient(135deg, #0073e6, #00c6ff);
+            color: white;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 15px rgba(0, 115, 230, 0.2);
+        }
+        
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        
+        .subtitle {
+            font-size: 1.3rem;
+            font-weight: 300;
+        }
+        
+        section {
+            background: white;
+            border-radius: 10px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        section:hover {
+            transform: translateY(-5px);
+        }
+        
+        h2 {
+            color: #0073e6;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #eaeaea;
+            font-size: 1.8rem;
+        }
+        
+        h3 {
+            color: #0073e6;
+            margin: 15px 0;
+            font-size: 1.4rem;
+        }
+        
+        p {
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+        }
+        
+        .highlight {
+            background-color: #fffde7;
+            padding: 15px;
+            border-left: 4px solid #ffc107;
+            margin-bottom: 20px;
+        }
+        
+        .highlight p {
+            font-weight: bold;
+            color: #f57c00;
+        }
+        
+        .stat-box {
+            background: #e3f2fd;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            text-align: center;
+        }
+        
+        .big-number {
+            font-size: 3rem;
+            font-weight: bold;
+            color: #0073e6;
+            display: block;
+            margin-bottom: 10px;
+        }
+        
+        .comparison {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin: 20px 0;
+        }
+        
+        .product {
+            flex: 1;
+            min-width: 300px;
+            margin: 10px;
+            padding: 20px;
+            background: #f9f9f9;
+            border-radius: 8px;
+            text-align: center;
+        }
+        
+        .product h4 {
+            color: #0073e6;
+            margin-bottom: 15px;
+        }
+        
+        .product-img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+        
+        .feature-list {
+            list-style-type: none;
+        }
+        
+        .feature-list li {
+            margin-bottom: 10px;
+            padding-left: 25px;
+            position: relative;
+        }
+        
+        .feature-list li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #4caf50;
+            font-weight: bold;
+        }
+        
+        .tabs {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        .tab {
+            padding: 10px 20px;
+            cursor: pointer;
+            border: none;
+            background: none;
+            font-size: 1.1rem;
+            color: #666;
+            transition: all 0.3s ease;
+        }
+        
+        .tab.active {
+            color: #0073e6;
+            border-bottom: 3px solid #0073e6;
+        }
+        
+        .tab-content {
+            display: none;
+        }
+        
+        .tab-content.active {
+            display: block;
+            animation: fadeIn 0.5s ease-in-out;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        .steps {
+            display: flex;
+            justify-content: space-between;
+            margin: 30px 0;
+            flex-wrap: wrap;
+        }
+        
+        .step {
+            flex: 1;
+            min-width: 200px;
+            margin: 10px;
+            text-align: center;
+            padding: 20px;
+            background: #e3f2fd;
+            border-radius: 10px;
+        }
+        
+        .step-number {
+            width: 40px;
+            height: 40px;
+            background: #0073e6;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto 15px auto;
+            font-weight: bold;
+        }
+        
+        .image-comparison {
+            margin: 30px 0;
+            text-align: center;
+        }
+        
+        .comparison-container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        
+        .comparison-item {
+            flex: 1;
+            min-width: 300px;
+            margin: 10px;
+        }
+        
+        .comparison-img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        .comparison-title {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #333;
+            color: white;
+            border-radius: 10px;
+        }
+        
+        .logo {
+            max-width: 150px;
+            margin-bottom: 15px;
+        }
+        
+        .case-studies {
+            margin-top: 40px;
+        }
+        
+        .case-card {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+            overflow: hidden;
+        }
+        
+        .case-header {
+            background: #0073e6;
+            color: white;
+            padding: 15px 20px;
+        }
+        
+        .case-body {
+            padding: 20px;
+        }
+        
+        .case-images {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        
+        .case-image-container {
+            flex: 1;
+            min-width: 280px;
+            margin: 10px;
+            text-align: center;
+        }
+        
+        .case-image {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .case-image:hover {
+            transform: scale(1.05);
+        }
+        
+        .before-after-label {
+            display: inline-block;
+            padding: 5px 15px;
+            background: #0073e6;
+            color: white;
+            border-radius: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        
+        .case-description {
+            margin: 20px 0;
+        }
+        
+        .testimonial {
+            font-style: italic;
+            background: #f5f9ff;
+            padding: 15px;
+            border-left: 3px solid #0073e6;
+            margin: 15px 0;
+        }
+        
+        @media (max-width: 768px) {
+            .comparison, .steps, .case-images {
+                flex-direction: column;
+            }
+            
+            header h1 {
+                font-size: 2rem;
+            }
+            
+            .subtitle {
+                font-size: 1.1rem;
+            }
+            
+            section {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>派勒地垫 - 降低清洁成本的秘密</h1>
+            <p class="subtitle">为什么铺上派勒地垫后，清洁成本大幅降低？</p>
+        </header>
+        
+        <section id="quotes">
+            <div class="highlight">
+                <p>"铺上派勒地垫后，清洁成本也降下来了~" — 商场管理者</p>
+            </div>
+            <div class="highlight">
+                <p>"工作也轻松多了呢~" — 保洁阿姨</p>
+            </div>
+        </section>
+        
+        <section id="cost-reduction">
+            <h2>为什么派勒地垫能降低清洁成本？</h2>
+            
+            <div class="stat-box">
+                <span class="big-number">75%</span>
+                <p>的灰尘和湿气是由户外携带进入建筑物内，污染室内环境，大大增加清洁成本</p>
+            </div>
+            
+            <div class="stat-box">
+                <span class="big-number">90%</span>
+                <p>有效的地面安全与污染控制系统能够去除高达90%由外界带入建筑物内的灰尘与湿气</p>
+            </div>
+            
+            <div class="stat-box">
+                <span class="big-number">¥700</span>
+                <p>去除1公斤灰尘的成本要高达人民币700元</p>
+            </div>
+            
+            <p>研究表明，一天当中多达几公斤重的尘土和污垢将会被行人或其他车辆设备带入建筑物内。在室内地铺材料的使用周期内，其维护成本高达初次购买成本的86%。在这种情况下，派勒地垫系统大大降低了维护费用。</p>
+            
+            <h3>派勒地垫三区设置解决方案</h3>
+            <p>"地垫三区设置"是从室外到室内的完整地垫系统设置。从大门外刮除大颗粒砂石，到达门厅后去除细沙，最终在室内擦干鞋底水渍。</p>
+            
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h4>区域一：室外</h4>
+                    <p>将室外的污染物，如大颗粒砂石、泥尘阻隔在外，成为入口的第一道防线。</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h4>区域二：门厅</h4>
+                    <p>将残留的细尘、泥水等在前厅去除，鞋底基本去除污染。</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h4>区域三：室内</h4>
+                    <p>可在雨天加铺吸水地垫，将雨伞、鞋底的水份迅速擦去吸干。</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="product-comparison">
+            <h2>派勒地垫产品优势</h2>
+            
+            <div class="tabs">
+                <button class="tab active" onclick="openTab(event, 'weight')">绒重对比</button>
+                <button class="tab" onclick="openTab(event, 'height')">绒高对比</button>
+                <button class="tab" onclick="openTab(event, 'particles')">颗粒对比</button>
+                <button class="tab" onclick="openTab(event, 'arrangement')">颗粒排列</button>
+            </div>
+            
+            <div id="weight" class="tab-content active">
+                <h3>绒重对比：比市面同类产品重</h3>
+                <div class="comparison">
+                    <div class="product">
+                        <h4>派勒艾肯地垫</h4>
+                        <p><strong>绒重：1700g</strong></p>
+                        <p>更重的绒面确保了更好的吸尘能力和更长的使用寿命</p>
+                    </div>
+                    <div class="product">
+                        <h4>市面同类产品</h4>
+                        <p><strong>绒重：1000g</strong></p>
+                        <p>轻薄的绒重难以有效吸收灰尘</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="height" class="tab-content">
+                <h3>绒高对比：比市面同类产品高</h3>
+                <div class="comparison">
+                    <div class="product">
+                        <h4>派勒艾肯地垫</h4>
+                        <p>更高的绒面能够有效捕获灰尘颗粒，提供更强的清洁效果</p>
+                    </div>
+                    <div class="product">
+                        <h4>市面同类产品</h4>
+                        <p>绒面较低，清洁效果有限</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="particles" class="tab-content">
+                <h3>颗粒对比：更饱满，用料扎实</h3>
+                <div class="comparison">
+                    <div class="product">
+                        <h4>派勒艾肯地垫</h4>
+                        <p>颗粒更饱满，用料扎实，硬挺不松软，不含胶，遇水更防滑</p>
+                    </div>
+                    <div class="product">
+                        <h4>市面同类产品</h4>
+                        <p>颗粒松散，遇水容易变滑</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="arrangement" class="tab-content">
+                <h3>颗粒排列：排列密实，不易被踩踏</h3>
+                <div class="comparison">
+                    <div class="product">
+                        <h4>派勒艾肯地垫</h4>
+                        <p>颗粒排列密实，不易被踩踏，使用寿命更长</p>
+                    </div>
+                    <div class="product">
+                        <h4>市面同类产品</h4>
+                        <p>颗粒排列松散，容易被踩踏变形</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="durability">
+            <h2>使用效果对比</h2>
+            <p>派勒地垫经过长期使用后，仍然保持良好的外观和功能性，而同类产品却出现了明显的老化和损坏。</p>
+            
+            <div class="image-comparison">
+                <h3>使用2年后的对比</h3>
+                <div class="comparison-container">
+                    <div class="comparison-item">
+                        <p class="comparison-title">派勒艾肯地垫</p>
+                        <img src="/api/placeholder/400/300" alt="派勒地垫使用2年后" class="comparison-img">
+                        <p>毯面无变化，颗粒依旧饱满</p>
+                    </div>
+                    <div class="comparison-item">
+                        <p class="comparison-title">市面同类产品</p>
+                        <img src="/api/placeholder/400/300" alt="同类产品使用2年后" class="comparison-img">
+                        <p>毯面塌陷，破旧不堪</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="benefits">
+            <h2>派勒地垫的综合优势</h2>
+            <ul class="feature-list">
+                <li><strong>降低滑倒事故的风险</strong>：有效防止地面湿滑，确保行人安全</li>
+                <li><strong>保护和改善室内地铺材料的外观</strong>：避免大颗粒沙石和灰尘对地面的磨损</li>
+                <li><strong>降低清理和维护成本</strong>：减少高达86%的地面维护成本</li>
+                <li><strong>灰尘污染控制</strong>：去除超过90%的灰尘污染</li>
+                <li><strong>产品责任险保障</strong>：所有派勒地垫均承保第三方责任险</li>
+            </ul>
+        </section>
+        
+        <section id="case-studies">
+            <h2>成功案例展示</h2>
+            <p>以下是一些实际项目中派勒地垫应用的前后对比，让您直观感受派勒地垫的卓越品质和持久效果。</p>
+            
+            <div class="case-studies">
+                <!-- 案例1 -->
+                <div class="case-card">
+                    <div class="case-header">
+                        <h3>上海某五星级酒店入口处 — 使用3年效果对比</h3>
+                    </div>
+                    <div class="case-body">
+                        <div class="case-images">
+                            <div class="case-image-container">
+                                <span class="before-after-label">安装前</span>
+                                <img src="/api/placeholder/400/300" alt="安装前的酒店入口" class="case-image">
+                                <p>入口处地面经常积水和沙砾，清洁频率高</p>
+                            </div>
+                            <div class="case-image-container">
+                                <span class="before-after-label">使用3年后</span>
+                                <img src="/api/placeholder/400/300" alt="使用3年后的酒店入口" class="case-image">
+                                <p>地垫保持良好状态，入口处地面干净整洁</p>
+                            </div>
+                        </div>
+                        <div class="case-description">
+                            <p>该五星级酒店每天客流量大，原本入口处地面需要每小时清洁一次，安装派勒三区地垫系统后，清洁频率降低至每4小时一次，清洁成本下降约65%。</p>
+                            <div class="testimonial">
+                                <p>"派勒地垫安装后3年来，依然保持出色的性能，大堂地面的保洁难度大大降低，顾客的滑倒风险也明显减少。"</p>
+                                <p>— 酒店工程部主管</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 案例2 -->
+                <div class="case-card">
+                    <div class="case-header">
+                        <h3>北京某大型商场主入口 — 使用5年效果对比</h3>
+                    </div>
+                    <div class="case-body">
+                        <div class="case-images">
+                            <div class="case-image-container">
+                                <span class="before-after-label">安装前</span>
+                                <img src="/api/placeholder/400/300" alt="安装前的商场入口" class="case-image">
+                                <p>雨雪天气时地面容易湿滑，曾发生多起顾客滑倒事件</p>
+                            </div>
+                            <div class="case-image-container">
+                                <span class="before-after-label">使用5年后</span>
+                                <img src="/api/placeholder/400/300" alt="使用5年后的商场入口" class="case-image">
+                                <p>地垫依然保持良好外观，有效阻隔外部水分和污垢</p>
+                            </div>
+                        </div>
+                        <div class="case-description">
+                            <p>该商场年客流量超过500万人次，在安装派勒地垫系统前，大理石地面频繁出现划痕和磨损，每年需投入大量资金进行打磨和维护。安装派勒地垫系统后，地面维护成本降低了70%，5年内未发生一起滑倒事故。</p>
+                            <div class="testimonial">
+                                <p>"使用派勒地垫五年来，商场入口地面的清洁频率从每天6次降至2次，地面保养周期也从半年一次延长到两年一次，节省了大量的维护成本。更令人满意的是，地垫本身的使用状态依然良好，没有出现明显的磨损。"</p>
+                                <p>— 商场物业经理</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 案例3 -->
+                <div class="case-card">
+                    <div class="case-header">
+                        <h3>广州某办公楼大堂 — 使用4年效果对比</h3>
+                    </div>
+                    <div class="case-body">
+                        <div class="case-images">
+                            <div class="case-image-container">
+                                <span class="before-after-label">安装前</span>
+                                <img src="/api/placeholder/400/300" alt="安装前的办公楼大堂" class="case-image">
+                                <p>雨季时大堂地面经常积水，保洁人员疲于奔命</p>
+                            </div>
+                            <div class="case-image-container">
+                                <span class="before-after-label">使用4年后</span>
+                                <img src="/api/placeholder/400/300" alt="使用4年后的办公楼大堂" class="case-image">
+                                <p>地垫系统持续高效工作，地面保持干爽整洁</p>
+                            </div>
+                        </div>
+                        <div class="case-description">
+                            <p>该办公楼入驻企业超过50家，日均人流量约2000人次。安装派勒地垫系统后，办公楼大堂地面清洁成本降低约60%，保洁人员从原来的4人减少到2人，地垫使用4年后依然保持良好状态。</p>
+                            <div class="testimonial">
+                                <p>"广州多雨潮湿的气候条件下，派勒地垫展现出色的吸水和防滑性能。使用4年后的今天，地垫依然如新，这是我们之前使用其他品牌地垫从未有过的体验。每年的清洁费用节省让我们的投资在不到一年的时间内就收回成本。"</p>
+                                <p>— 办公楼管理处主任</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <footer>
+            <p>上海派勒环保科技有限公司</p>
+            <p>为您提供专业的地面安全与污染控制解决方案</p>
+        </footer>
+    </div>
+
+    <script>
+        function openTab(evt, tabName) {
+            var i, tabcontent, tablinks;
+            
+            tabcontent = document.getElementsByClassName("tab-content");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].className = tabcontent[i].className.replace(" active", "");
+            }
+            
+            tablinks = document.getElementsByClassName("tab");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            
+            document.getElementById(tabName).className += " active";
+            evt.currentTarget.className += " active";
+        }
+    </script>
+</body>
+</html>
